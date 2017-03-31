@@ -24,11 +24,11 @@ Extended Selenium2 Library - a web testing library with AngularJS support.
 from robot.api import logger
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.remote.webelement import WebElement
-from Selenium2Library.keywords import _ElementKeywords
+from Selenium2Library.keywords import ElementKeywords
 from ExtendedSelenium2Library.locators import ExtendedElementFinder
 
 
-class ExtendedElementKeywords(_ElementKeywords):
+class ExtendedElementKeywords(ElementKeywords):
     """ExtendedElementKeywords are web element execution in the requested browser."""
 
     def __init__(self):

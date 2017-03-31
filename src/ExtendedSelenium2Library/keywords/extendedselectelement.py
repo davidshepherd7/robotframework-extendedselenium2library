@@ -21,10 +21,10 @@
 Extended Selenium2 Library - a web testing library with AngularJS support.
 """
 
-from Selenium2Library.keywords import _SelectElementKeywords
+from Selenium2Library.keywords import SelectElementKeywords
 
 
-class ExtendedSelectElementKeywords(_SelectElementKeywords):
+class ExtendedSelectElementKeywords(SelectElementKeywords):
     """ExtendedSelectElementKeywords are select element execution in the requested browser."""
 
     def __init__(self):

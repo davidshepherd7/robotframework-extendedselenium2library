@@ -27,7 +27,7 @@ import unittest
 import mock
 from ExtendedSelenium2Library.keywords import ExtendedElementKeywords
 from selenium.webdriver.remote.webelement import WebElement
-from Selenium2Library.keywords import _ElementKeywords
+from Selenium2Library.keywords import ElementKeywords
 
 
 class ExtendedElementTests(unittest.TestCase):
@@ -50,7 +50,7 @@ class ExtendedElementTests(unittest.TestCase):
 
     def test_should_inherit_keywords(self):
         """Extended element instance should inherit Selenium2 element instances."""
-        self.assertIsInstance(self.element, _ElementKeywords)
+        self.assertIsInstance(self.element, ElementKeywords)
 
     def test_should_click_element(self):
         """Should click an element."""

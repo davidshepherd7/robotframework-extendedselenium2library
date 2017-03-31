@@ -26,7 +26,7 @@ path.append('src')
 import unittest
 import mock
 from ExtendedSelenium2Library.keywords import ExtendedJavascriptKeywords
-from Selenium2Library.keywords import _JavaScriptKeywords
+from Selenium2Library.keywords import JavaScriptKeywords
 
 
 class ExtendedJavascriptTests(unittest.TestCase):
@@ -45,7 +45,7 @@ class ExtendedJavascriptTests(unittest.TestCase):
 
     def test_should_inherit_keywords(self):
         """Extended Javascript instance should inherit Selenium2 Javascript instances."""
-        self.assertIsInstance(self.script, _JavaScriptKeywords)
+        self.assertIsInstance(self.script, JavaScriptKeywords)
 
     def test_execute_async_js_with_replaced_vars(self):
         """Should execute async js with replaced vars."""

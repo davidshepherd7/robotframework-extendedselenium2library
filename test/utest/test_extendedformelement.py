@@ -27,7 +27,7 @@ import unittest
 import mock
 from ExtendedSelenium2Library.keywords import ExtendedFormElementKeywords
 from selenium.webdriver.remote.webelement import WebElement
-from Selenium2Library.keywords import _FormElementKeywords
+from Selenium2Library.keywords import FormElementKeywords
 
 
 class ExtendedFormElementTests(unittest.TestCase):
@@ -49,7 +49,7 @@ class ExtendedFormElementTests(unittest.TestCase):
 
     def test_should_inherit_keywords(self):
         """Extended form element instance should inherit Selenium2 form element instances."""
-        self.assertIsInstance(self.element, _FormElementKeywords)
+        self.assertIsInstance(self.element, FormElementKeywords)
 
     def test_should_click_input_button(self):
         """Should click an input button."""
